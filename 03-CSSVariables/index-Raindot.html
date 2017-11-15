@@ -22,9 +22,21 @@
 
   <style>
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+    :root {
+      --base :ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+
 
     body {
       text-align: center;
@@ -45,6 +57,17 @@
   </style>
 
   <script>
+    const input = document.querySelectorAll('input');
+    input.forEach(input => {
+      input.addEventListener('change', updateValue);
+      input.addEventListener('mousemove', updateValue);
+    });
+
+    function updateValue(e){
+      console.log(this.dataset.sizing);
+      const suffix = this.dataset.sizing || ''; //如果後綴不是px的話，需要給一個''空值，否則找不到datase.sizing，會變成undefied
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
   </script>
 
 </body>
