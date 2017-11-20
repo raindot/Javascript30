@@ -124,20 +124,25 @@
     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
     function toggleOpen(){
-      //一次只打開一個panel的話加上這行
-      //如果已有.open，則先移除掉
+      //一次只打開一個panel，如果已有.open，則先移除掉
       panels.forEach(panel => {
         if (panel.classList.contains('open')){
         panel.classList.remove('open');
+        return;
+
+        }
+        if(this === panel){
+          panel.classList.add('open');
         }
       });
       
-      this.classList.toggle('open');
+      console.log(this);
       
     }
 
+
+
     function toggleActive(e){
-      // console.log(e.propertyName);
       if(e.propertyName.includes('flex')){
         this.classList.toggle('open-active');
       }
