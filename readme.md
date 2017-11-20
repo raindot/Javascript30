@@ -8,6 +8,6 @@ The file with "my-" is my own practice version.
 
 [03.CSS Variables](https://raindot.github.io/Javascript30/03-CSSVariables/index-Raindot.html)
 
-[05.FlexPanel Gallery](https://raindot.github.io/Javascript30/05-FlexPanelGallery/index-raindot.html) | [note](https://github.com/raindot/Javascript30/blob/master/05-FlexPanelGallery/README.md)
+[05.FlexPanel Gallery](https://raindot.github.io/Javascript30/05-FlexPanelGallery/index-raindot.html) | [note](https://github.com/raindot/Javascript30/blob/master/05-FlexPanelGallery/readme.md)
 
 
