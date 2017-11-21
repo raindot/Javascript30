@@ -11,3 +11,4 @@ The file with "my-" is my own practice version.
 [05.FlexPanel Gallery](https://raindot.github.io/Javascript30/05-FlexPanelGallery/index-raindot.html) | [note](https://github.com/raindot/Javascript30/blob/master/05-FlexPanelGallery/readme.md)
 
 
+[13.SlideinonScroll](https://raindot.github.io/Javascript30/13-SlideinonScroll/index-raindot.html) | [note](https://github.com/raindot/Javascript30/blob/master/13-SlideinonScroll/README.md)
